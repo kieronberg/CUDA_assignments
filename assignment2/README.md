@@ -82,5 +82,3 @@ Instead of reading `unsigned char` (1 byte), we can read 4 or 16 bytes at a time
 If the filter is very small ($3 \times 3$), unrolling the loops entirely can help the compiler keep values in registers rather than fetching them from any memory at all.
 
 ---
-
-**Verdict:** Your optimized implementation successfully cut the GPU execution time nearly in half compared to the naive approach, proving that **memory hierarchy management** is the king of CUDA optimization.
